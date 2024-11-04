@@ -1,0 +1,33 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "139fe737f599bad0d1b70689a2e2071f"
+name = "cooking app"
+handle = "cooking-app-3"
+application_url = "https://bargain-upset-leaving-landing.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "test-0108.myshopify.com"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_customers,read_orders"
+
+[auth]
+redirect_urls = [
+  "https://bargain-upset-leaving-landing.trycloudflare.com/auth/callback",
+  "https://bargain-upset-leaving-landing.trycloudflare.com/auth/shopify/callback",
+  "https://bargain-upset-leaving-landing.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+[app_proxy]
+url = "https://bargain-upset-leaving-landing.trycloudflare.com"
+subpath = "test"
+prefix = "apps"
+
+[pos]
+embedded = false

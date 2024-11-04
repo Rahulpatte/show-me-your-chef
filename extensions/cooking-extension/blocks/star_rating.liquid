@@ -1,0 +1,17 @@
+<div id="root" data-customerid='{{customer.id}}' ></div>
+
+
+
+{% schema %}
+{
+  "name": "Star Rating",
+  "target": "section",
+  "stylesheet": "main.css",
+  "javascript": "main.js",
+  "settings": [
+    { "type": "product", "id": "product", "label": "product", "autofill": true },
+    { "type": "color", "id": "colour", "label": "Star Colour", "default": "#ff0000" }
+  ]
+}
+{% endschema %}
+
